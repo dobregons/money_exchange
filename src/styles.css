@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+    max-width: 1349px;
+}
+
+app-root .container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px;
+}
+
+app-main .section-main {
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+    max-width: 100%;
+    padding: 0px;
+}
+
+app-main .section-main form {
+    margin: 4rem auto;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.belatrix-btn {
+    font-family: 'Roboto', sans-serif;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    background: #f89937;
+    border: 1px solid #fff;
+    padding: 0.8rem 1.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.belatrix-btn:hover {
+    background: #e88c2e;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top-c {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.top-c div {
+    height: 9px;
+    background-color: aliceblue;
+}
+
+.read-only {
+    background-color: transparent !important;
+    border: 1px solid #ced4da !important;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.copyright {
+    background-color: #1a252f;
+}
+
+footer {
+    background-color: #18bc9c!important;
+}
+
+footer .container {
+    margin-top: 2rem auto;
+}
+
+.btn-foot {
+    height: 3rem;
+    width: 3rem;
+}

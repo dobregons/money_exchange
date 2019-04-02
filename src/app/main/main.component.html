@@ -1,0 +1,52 @@
+<section class="section-main text-center">
+    <form action="">
+        <div class="row">
+            <div class="form-group px-3 col-sm-4 offset-md-2">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">US $</span>
+                    </div>
+                    <input type="text" name="dollar" aria-label="Amount of dollars." class="form-control" [(ngModel)]="dollar" />
+
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group px-3 col-sm-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">€</span>
+                    </div>
+                    <input type="text" name="euro" aria-label="Amount of euros." class="form-control read-only" readonly [(ngModel)]="euro" />
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="row">
+                    <div class="col-md-6"><button type="button" type="button" value="llamar metodo" (click)="convertDollarToEuro()" class="belatrix-btn">
+                            <span class="play-icon align-middle"></span>
+                            <span class="align-middle">Call</span>
+                        </button></div>
+                    <div class="col-md-6"><button type="button" type="button" value="llamar metodo" (click)="convertDollarToEuroAsync()" class="belatrix-btn">
+                            <span class="play-icon align-middle"></span>
+                            <span class="align-middle">Call Async</span>
+                        </button></div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden">
+            <br> {{objectApi | json}}
+            <br> {{dollar}}
+            <br> {{euro}}
+        </div>
+
+
+    </form>
+</section>
