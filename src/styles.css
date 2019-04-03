@@ -80,3 +80,15 @@ footer .container {
     height: 3rem;
     width: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+    #img-profile {
+        width: 50%;
+    }
+    .top-c {
+        display: none;
+    }
+    footer {
+        padding: 10px;
+    }
+}

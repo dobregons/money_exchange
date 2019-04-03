@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   APIURL:
-    "http://data.fixer.io/api/latest?access_key=a80f938bd655ad4acfd75191d077b342"
+    "http://data.fixer.io/api/latest?access_key=a80f938bd655ad4acfd75191d077b342",
+  timerRequest: 1 //Time in minutes
 };
 
 /*

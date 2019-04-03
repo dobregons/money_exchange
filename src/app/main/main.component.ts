@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoneyService } from '../money.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-main',
@@ -13,7 +14,8 @@ export class MainComponent implements OnInit {
   dollar: number;
   euro: number;
   objectApi: any;
-  
+  interval: any;
+
   convertDollarToEuro() {
     this.moneyService.convertDollarToEuro().subscribe(res => {
       this.objectApi = res;
@@ -28,6 +30,10 @@ export class MainComponent implements OnInit {
   ngOnInit() {
     this.dollar = 0;
     this.euro = 0;
+    //Call each 10 minutes service to refresh values
+    this.interval = setInterval(() => {
+        this.convertDollarToEuro();
+    }, (environment.timerRequest * 60)*1000);
   }
 
 }
